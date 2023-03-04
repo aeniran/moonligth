@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paralix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">content</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="bg.jpg" alt="" id="stars">
+        <img src="moon.png" alt="" id="moon">
+        <img src="mountain.png" alt="" id="mountain">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="road.png" alt="" id="road">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis, cumque maxime, ex hic voluptatum
+            quisquam porro pariatur similique eveniet, velit atque tempore ipsum placeat unde voluptas. Maiores, aperiam
+            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti quia saepe odit fugiat velit,
+            neque cupiditate molestiae hic animi tempore accusamus. Quos ullam ipsam vel voluptatibus distinctio soluta
+            suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in laudantium quasi minima magnam
+            molestias voluptas eum harum ea? Ratione illum tempora nemo fugiat culpa dicta omnis iure cupiditate
+            quibusdam. <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis, cumque maxime,
+            ex hic voluptatum
+            quisquam porro pariatur similique eveniet, velit atque tempore ipsum placeat unde voluptas. Maiores, aperiam
+            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti quia saepe odit fugiat velit,
+            neque cupiditate molestiae hic animi tempore accusamus. Quos ullam ipsam vel voluptatibus distinctio soluta
+            suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in laudantium quasi minima magnam
+            molestias voluptas eum harum ea? Ratione illum tempora nemo fugiat culpa dicta omnis iure cupiditate
+            quibusdam. <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis, cumque maxime,
+            ex hic voluptatum
+            quisquam porro pariatur similique eveniet, velit atque tempore ipsum placeat unde voluptas. Maiores, aperiam
+            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti quia saepe odit fugiat velit,
+            neque cupiditate molestiae hic animi tempore accusamus. Quos ullam ipsam vel voluptatibus distinctio soluta
+            suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in laudantium quasi minima magnam
+            molestias voluptas eum harum ea? Ratione illum tempora nemo fugiat culpa dicta omnis iure cupiditate
+            quibusdam <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis, cumque maxime,
+            ex hic voluptatum
+            quisquam porro pariatur similique eveniet, velit atque tempore ipsum placeat unde voluptas. Maiores, aperiam
+            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti quia saepe odit fugiat velit,
+            neque cupiditate molestiae hic animi tempore accusamus. Quos ullam ipsam vel voluptatibus distinctio soluta
+            suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in laudantium quasi minima magnam
+            molestias voluptas eum harum ea? Ratione illum tempora nemo fugiat culpa dicta omnis iure cupiditate
+            quibusdam <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis, cumque maxime,
+            ex hic voluptatum
+            quisquam porro pariatur similique eveniet, velit atque tempore ipsum placeat unde voluptas. Maiores, aperiam
+            alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti quia saepe odit fugiat velit,
+            neque cupiditate molestiae hic animi tempore accusamus. Quos ullam ipsam vel voluptatibus distinctio soluta
+            suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in laudantium quasi minima magnam
+            molestias voluptas eum harum ea? Ratione illum tempora nemo fugiat culpa dicta omnis iure cupiditate
+            quibusdam</p>
+    </div>
+    <script>
+        let stars = document.getElementById("stars")
+        let moon = document.getElementById("moon")
+        let mountain = document.getElementById("mountain")
+        let road = document.getElementById("road")
+        let text = document.getElementById("text")
+        let btn = document.getElementById("btn")
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY
+            stars.style.left = value = 0.25 = 'px'
+            moon.style.top = value = 1.05 = 'px'
+           road.style.top = value = 0.05 = 'px'
+        })
+    </script>
+</body>
+
+</html>
